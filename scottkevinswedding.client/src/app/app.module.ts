@@ -4,10 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 //primeng Imports 
 import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { AccordionModule } from 'primeng/accordion';
 
 //custom components 
 import { MenuBarComponent } from './nav/menu-bar/menu-bar.component';
@@ -28,11 +32,13 @@ import { RsvpComponent } from './pages/rsvp/rsvp.component';
     RsvpComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, FormsModule,
+    BrowserModule, HttpClientModule, FormsModule, BrowserAnimationsModule,
     AppRoutingModule,
     MenubarModule,
     InputTextModule,
     TableModule,
+    ButtonModule,
+    AccordionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Development\\Repos\\ScottKevinsWedding\\ScottKevinsWedding.Server\\ScottKevinsWedding.Server.csproj",
+      "projectUniqueName": "D:\\Documents\\Development\\Repos\\wedding\\ScottKevinsWedding.Server\\ScottKevinsWedding.Server.csproj",
       "projectName": "ScottKevinsWedding.Server",
-      "projectPath": "D:\\Documents\\Development\\Repos\\ScottKevinsWedding\\ScottKevinsWedding.Server\\ScottKevinsWedding.Server.csproj",
+      "projectPath": "D:\\Documents\\Development\\Repos\\wedding\\ScottKevinsWedding.Server\\ScottKevinsWedding.Server.csproj",
       "packagesPath": "C:\\Users\\scott\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Development\\Repos\\ScottKevinsWedding\\ScottKevinsWedding.Server\\obj\\",
+      "outputPath": "D:\\Documents\\Development\\Repos\\wedding\\ScottKevinsWedding.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

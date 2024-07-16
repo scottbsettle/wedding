@@ -85,3 +85,8 @@ h4 {
 img{
     width: 100%;
 }
+
+.accordion{
+    width: 100%;
+    padding-top: 1rem;
+}

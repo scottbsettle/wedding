@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+body{
+    background-color: #00162e;
+    color: #C4C4C4;
+    font-family: cursive;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.required{
+    color: rgb(173, 7, 7);
+}

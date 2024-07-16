@@ -1,0 +1,25 @@
+.nav-bar {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #00162e;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.link-page {
+    cursor: pointer;
+    opacity: .6;
+    width: 100%;
+
+}
+
+.link-page:hover {
+    opacity: 1;
+    border-bottom: 2px solid silver;
+}
+
+.spacer {
+    cursor: default;
+}

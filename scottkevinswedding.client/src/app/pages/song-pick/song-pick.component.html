@@ -1,0 +1,50 @@
+<div class="song-pick">
+    <h1>Song Suggestions</h1>
+    <p>We are looking to get song suggestions for our wedding to be played at the cocktail hour and reception. If you
+        have songs you would
+        enjoy to hear at our event please submit them here below.
+    </p>
+
+    <div class="input-container">
+        <p class="title-text">Guest Name</p>
+        <div class="input-text">
+            <input type="text" pInputText [(ngModel)]="songPick.guestName" placeholder="Anonymous"/>
+        </div>
+        <p class="title-text"><span class="required" >*</span> Song Title</p>
+        <div class="input-text">
+            
+            <input type="text" pInputText [(ngModel)]="songPick.title" placeholder="Pepper" />
+        </div>
+        <p class="title-text"><span class="required">*</span> Artists</p>
+        <div class="input-text">
+           
+            <input type="text" pInputText [(ngModel)]="songPick.artists" placeholder="Butthole Surfers"  />
+        </div>
+        <div class="input-text">
+            <button class="submit-button"><span class="button-text">Submit</span></button>
+        </div>
+    </div>
+  
+    <div class="song-table">
+        <p-table [value]="songPicks" >
+            <ng-template pTemplate="header">
+                <tr>
+                    <th class="table-header">Title</th>
+                    <th class="table-header">Artists</th>
+                    <th class="table-header">Guest Name</th>
+                    <th class="table-header">Votes</th>
+                    <th class="table-header">Vote</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-song>
+                <tr>
+                    <td class="table-row">{{ song.title }}</td>
+                    <td class="table-row">{{ song.artists }}</td>
+                    <td class="table-row">{{ song.guestName }}</td>
+                    <td class="table-row">{{song.votes}}</td>
+                    <td class="table-row"><a><i class="pi pi-thumbs-up-fill" style="color: slateblue"></i></a> <a class="down"><i class="pi pi-thumbs-down-fill" style="color: slateblue"></i></a></td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

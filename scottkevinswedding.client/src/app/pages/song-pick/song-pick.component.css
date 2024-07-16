@@ -1,0 +1,54 @@
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    padding: 1rem
+}
+
+.title-text {
+    padding-left: 1rem;
+}
+
+.submit-button {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8.5px;
+    border: 2px solid silver;
+    background-color: inherit;
+    color: silver;
+}
+
+.submit-button:hover {
+    border-color: #002b58;
+    color: #002b58;
+    background-color: whitesmoke;
+    transition: 2s;
+}
+
+.song-table {
+    width: 100%;
+    padding: 3rem;
+}
+
+.table-header{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    width: 3rem;
+}
+
+.table-row{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+.down{
+    padding-left: 1rem;
+}
+/* .button-text{
+    padding: .5rem;
+    margin: 0.5rem;
+} */

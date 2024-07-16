@@ -1,12 +1,13 @@
 .input-container {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .input-text {
-    padding: 1rem
+    padding: 1rem;
 }
 
 .title-text {
@@ -34,16 +35,16 @@
     padding: 3rem;
 }
 
-/* .table-header{
-    background-color: rgb(12, 12, 12);
+.table-header{
+    background-color: var(--back-ground-color);
     color: white;
     width: 3rem;
 }
 
 .table-row{
-    background-color: rgb(12, 12, 12);
+    background-color: var(--back-ground-color);
     color: white;
-} */
+}
 
 .down{
     padding-left: 1rem;
@@ -52,3 +53,10 @@
     padding: .5rem;
     margin: 0.5rem;
 } */
+
+.input-section{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}

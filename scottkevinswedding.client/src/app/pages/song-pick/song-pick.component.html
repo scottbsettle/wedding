@@ -6,25 +6,37 @@
     </p>
 
     <div class="input-container">
-        <p class="title-text">Guest Name</p>
-        <div class="input-text">
-            <input type="text" pInputText [(ngModel)]="songPick.guestName" placeholder="Anonymous"/>
+        <div class="input-section">
+            <p class="title-text">Guest Name</p>
+            <div class="input-text">
+                <input type="text" pInputText [(ngModel)]="songPick.guestName" placeholder="Anonymous"/>
+            </div>
         </div>
-        <p class="title-text"><span class="required" >*</span> Song Title</p>
-        <div class="input-text">
-            
-            <input type="text" pInputText [(ngModel)]="songPick.title" placeholder="Pepper" />
+       
+        <div class="input-section">
+            <p class="title-text"><span class="required" >*</span> Song Title</p>
+            <div class="input-text">
+                
+                <input type="text" pInputText [(ngModel)]="songPick.title" placeholder="Pepper" />
+            </div>
         </div>
-        <p class="title-text"><span class="required">*</span> Artists</p>
-        <div class="input-text">
-           
-            <input type="text" pInputText [(ngModel)]="songPick.artists" placeholder="Butthole Surfers"  />
+
+        <div class="input-section">
+            <p class="title-text"><span class="required">*</span> Artists</p>
+            <div class="input-text">
+               
+                <input type="text" pInputText [(ngModel)]="songPick.artists" placeholder="Butthole Surfers"  />
+            </div>
         </div>
-        <div class="input-text">
-            <!-- <button class="submit-button"><span class="button-text">Submit</span></button> -->
-            <p-button label="Submit" [outlined]="true" severity="contrast" />
+       
+        <div class="input-section">
+            <div class="input-text">
+                <p-button label="Submit" [outlined]="true" severity="contrast" />
+            </div>
         </div>
+       
     </div>
+    
   
     <div class="song-table">
         <p-table [value]="songPicks" >

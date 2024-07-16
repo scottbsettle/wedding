@@ -1,10 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 
-body{
-    background-color: #00162e;
-    color: #C4C4C4;
-    font-family: cursive;
+:root {
+    --back-ground-color: #000810;
+    --hover-color: #00121f;
+    --font-color-primary: #C4C4C4;
+    --warning-color: rgb(173, 7, 7);
+    --font-family: cursive
+}
+
+body {
+    background-color: var(--back-ground-color);
+    color: var(--font-color-primary);
+    font-family: var(--font-family);
 }
 
 a {
@@ -12,6 +20,26 @@ a {
     text-decoration: none;
 }
 
-.required{
-    color: rgb(173, 7, 7);
+.required {
+    color: var(--warning-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.p-accordion {
+    background-color: var(--back-ground-color) !important;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    background-color: var(--back-ground-color) !important;
+}
+
+.p-accordion .p-accordion-header:not(.p-highlight) .p-accordion-header-link {
+    background-color: var(--back-ground-color) !important;
+}
+
+.p-accordion .p-accordion-content {
+    background-color: var(--back-ground-color) !important;
 }

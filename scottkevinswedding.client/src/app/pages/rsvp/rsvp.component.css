@@ -1,0 +1,38 @@
+.info-text{
+    width: 66%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    cursor: default;
+}
+
+.user-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.user-input-section {
+    width: 100%;
+}
+.user-input-section-half {
+    width: 32%;
+}
+
+.user-input-setion-field {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+    flex-wrap: nowrap;
+}
+
+.submit-section{
+    display: contents;
+}

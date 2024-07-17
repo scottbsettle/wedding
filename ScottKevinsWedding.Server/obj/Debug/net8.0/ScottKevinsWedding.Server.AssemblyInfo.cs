@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("9b54acaa-1d35-416d-b654-4e87e1ee4a8d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScottKevinsWedding.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c28e40b35a5b4f9576df65666f831b0b4147217c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+433c769a630aa07c7e2367a78c796cbd46e825cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScottKevinsWedding.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScottKevinsWedding.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

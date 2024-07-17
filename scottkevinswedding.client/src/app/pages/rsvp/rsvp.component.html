@@ -1,1 +1,72 @@
-<p>rsvp works!</p>
+<div class="rsvp">
+
+    <div class="container">
+        <h1 class="header-text">RSVP to Kevin and Scotts Wedding!</h1>
+
+        <div class="info">
+            <p>This will help Kevin and Scott Identify how many people to expect at the event. We have options to
+                include a +1 if you plan on bringing
+                someone to the wedding. There is also a comment section below if you have any questions or consurns
+                please feel free to leave a comment.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="user-input">
+        <div class="user-input-section-half">
+            <div class="user-input-setion-field">
+                <p class="title-text"><span class="required">*</span> First Name</p>
+                <div class="input-text">
+                    <input type="text" pInputText placeholder="John" />
+                </div>
+            </div>
+            <div class="user-input-setion-field">
+                <p class="title-text"><span class="required">*</span> Last Name</p>
+                <div class="input-text">
+                    <input type="text" pInputText placeholder="Doe" />
+                </div>
+            </div>
+        </div>
+        <div class="user-input-section-half">
+            <div class="user-input-setion-field">
+                <p class="title-text">+1</p>
+                <div class="input-text">
+                    <p-checkbox [binary]="true" inputId="binary" />
+                </div>
+            </div>
+        </div>
+        <div class="user-input-section">
+            <p class="title-text">Comment</p>
+            <div class="input-text">
+                <textarea rows="10" cols="70" pInputTextarea [autoResize]="true"></textarea>
+            </div>
+        </div>
+        <div class="submit-section">
+            <div class="input-text">
+                <p-button label="Submit" [outlined]="true" severity="contrast" />
+            </div>
+        </div>
+    </div>
+
+    <div class="song-table">
+        <p-table>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th class="table-header">First Name</th>
+                    <th class="table-header">Last Name</th>
+                    <th class="table-header">+1</th>
+                    <th class="table-header">Comment</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-song>
+                <tr>
+                    <td class="table-row"></td>
+                    <td class="table-row"></td>
+                    <td class="table-row"></td>
+                    <td class="table-row"></td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

@@ -39,7 +39,22 @@
     
   
     <div class="song-table">
-        <p-table [value]="songPicks" >
+        <p-table  #dt2 [value]="songPicks" 
+            [globalFilterFields]="['title', 'artists', 'guestName', 'votes']">
+            <ng-template pTemplate="caption">
+                <div class="flex global-search">
+                    <p-iconField iconPosition="left" class="ml-auto">
+                        <p-inputIcon>
+                            <i class="pi pi-search"></i>
+                        </p-inputIcon>
+                        <input 
+                            pInputText 
+                            type="text" 
+                            (input)="dt2.filterGlobal(($any)($event.target).value, 'contains')"  
+                            placeholder="Search keyword" />
+                    </p-iconField>
+                </div>
+            </ng-template>
             <ng-template pTemplate="header">
                 <tr>
                     <th class="table-header">Title</th>

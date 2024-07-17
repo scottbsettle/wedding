@@ -7,6 +7,30 @@
 
         <!-- <app-picture-slide></app-picture-slide> -->
 
+        <div class="card container">
+            <p-galleria 
+                [value]="images" 
+                [showItemNavigators]="true" 
+                [showThumbnails]="false" 
+                [showIndicators]="true" 
+                [showIndicatorsOnItem]="true" 
+                [autoPlay]="true" 
+                [circular]="true"
+                [responsiveOptions]="responsiveOptions" 
+                [containerStyle]="{ 'max-width': '640px', 'margin-top':'2em' }"> 
+                    <ng-template pTemplate="item" let-item>
+                        <div class="photo-container">
+                            <img class="image-class" [src]="item.itemImageSrc" />
+                        </div>
+                    </ng-template>
+                    <ng-template pTemplate="thumbnail" let-item>
+                        <div class="grid grid-nogutter justify-content-center">
+                            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+                        </div>
+                    </ng-template>
+            </p-galleria>
+        </div>
+        
         <div class="container">
             <p class="intro-text">Scott Settle and Kevin Williams are engaged to get married! this is a union of two
                 people who love and care for each other deeply. They are excited to invite you
@@ -47,7 +71,7 @@
                     </p-accordionTab>
                     <p-accordionTab header="Cocktail Hour">
                         <span>
-                           Cocktail hour will start at 5:00pm through 6:00pm and will have an open bar. This will include beer and whine and a select few 
+                           Cocktail hour will start at 5:00pm through 6:00pm and will have an open bar. This will include beer, wine, and a select few 
                            liquor drinks available to any guest at the event over 21 years old. For guest under 21 there will be non-alcoholic beverages 
                            served. 
                         </span>
@@ -63,6 +87,29 @@
             </div>
         </div>
 
+        <p-tabView class="tab-view">
+            <p-tabPanel header="Song Picks">
+                    <p>We are asking our guest to pick a song they would like to be played at the "after
+                        party" of our wedding. This will help ensure everyone
+                        has a song they enjoy dancing to. We will add the songs to our playlist for the DJ to play! Click <a class="link" routerLink="/song-pick">here</a> to add a
+                        song
+                    </p>
+            </p-tabPanel>
+            <p-tabPanel header="Room Reservation">
+                <p>
+                    Our guest will get a discounted room at Mytsic Dunes Resort and Golf Club. If you are thinking about staying for the night 
+                    of the event we have detailed out how make a reservation <a class="link" routerLink="/room-reservation">here</a> for our 
+                    guest.
+                </p>
+            </p-tabPanel>
+            <p-tabPanel header="RSVP">
+                <p>
+                    We are asking all of our guest to RSVP to the wedding. This will give Kevin and Scott an accurate count of guest attending 
+                    the wedding. To RSVP please click the link <a class="link" routerLink="/rsvp">here</a> and submit once completed.
+                </p>
+            </p-tabPanel>
+        </p-tabView>
+       
         <div class="info">
             <h3 class="info-header">Dress Code:</h3>
             <p>Scott and Kevin are expecting a formal dress code at there wedding. Black tie would be prefered at the event.
@@ -72,37 +119,36 @@
         <div class="info">
             <h3 class="info-header">Best Men</h3>
             <div class="half-container">
-                Kenny Williams
+                <img class="head-shots" src="../../../assets/Head-Shot-Placeholder.jpg">
+                <div>Kenny Williams</div>
             </div>
             <div class="half-container">
-                <img src="../../../assets/image_67161345.JPG">
-                Paul Settle
+                <img class="head-shots" src="../../../assets/Paul.JPG">
+                <div>Paul Settle</div>
             </div>
         </div>
 
         <div class="info">
             <h3 class="info-header">Grooms Men</h3>
             <div class="qrt-container">
-                <img src="../../../assets/image_123650291.JPG">
-                Mario Sanchez
+                <img class="head-shots" src="../../../assets/mario.JPG">
+                <div>Mario Sanchez</div>
             </div>
             <div class="qrt-container">
-                First Last Name
+                <img class="head-shots" src="../../../assets/Head-Shot-Placeholder.jpg">
+                <div>Jacob Settle</div>
             </div>
             <div class="qrt-container">
-                First Last Name
+                <img class="head-shots" src="../../../assets/ScottErwin.jpg">
+                <div>Scott Erwin</div>
             </div>
             <div class="qrt-container">
-                First Last Name
+                <img class="head-shots" src="../../../assets/Bruno.jpg">
+                <div>Bruno</div>
             </div>
         </div>
-        <div class="info box" routerLink="/song-pick">
-            <h3 class="intro-text"> <a>Song Picks</a> </h3>
-            <p>We are asking our guest to pick a song they would like to be played at the "after
-                party" of our wedding. This will help ensure everyone
-                has a song they enjoy dancing to. We will add the songs to our playlist for the DJ to play!
-            </p>
-        </div>
+
+      
         <p><b>! This wedding will be an adult only event. Kevin and Scott respectfully ask to
                 please leave any kids at home or with a baby sitter for the
                 event. !</b></p>

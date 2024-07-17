@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "WmYpxKlXMdVStGFs/aRLcM4XWZ55ol+ZwGHYKv1UImE=",
+  "Hash": "aVE+viNQkD5qSJR4lQxDLFFAQl47VxO3WtKFL3wW00Y=",
   "Source": "ScottKevinsWedding.Server",
   "BasePath": "_content/ScottKevinsWedding.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\Documents\\Development\\Repos\\ScottKevinsWedding\\scottkevinswedding.client\\scottkevinswedding.client.esproj",
+      "Identity": "D:\\Documents\\Development\\Repos\\wedding\\scottkevinswedding.client\\scottkevinswedding.client.esproj",
       "Version": 2,
       "Source": "scottkevinswedding.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

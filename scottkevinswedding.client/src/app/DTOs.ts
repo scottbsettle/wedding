@@ -4,3 +4,15 @@ export interface SongPick {
     guestName: string
     votes: number
 }
+
+export interface Images {
+    itemImageSrc: string
+    thumbnailImageSrc: string
+}
+
+export interface Rsvp {
+    firstName: string
+    lastName: string
+    plusOne: boolean
+    comment: string
+}

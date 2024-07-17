@@ -1,1 +1,2 @@
 D:\Documents\Development\Repos\ScottKevinsWedding\scottkevinswedding.client\obj\Debug\scottkevinswedding.client.esproj.CoreCompileInputs.cache
+D:\Documents\Development\Repos\wedding\scottkevinswedding.client\obj\Debug\scottkevinswedding.client.esproj.CoreCompileInputs.cache

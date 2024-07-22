@@ -25,9 +25,9 @@ namespace ScottKevinsWedding.Server.Controllers
         }
 
         [HttpGet(Name = "getRsvp")]
-        public IEnumerable<Rsvp[]> GetRsvps()
+        public IEnumerable<Rsvp> GetRsvps()
         {
-            return null;
+            return _dataContext.rsvps.ToList();
         }
 
         [HttpPut(Name = "putSongPick")]

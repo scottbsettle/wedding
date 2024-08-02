@@ -9,12 +9,12 @@ import { Rsvp, SongPick } from './DTOs';
 
 export class WeddingService {
 
-  private readonly api: string = '/wedding'
+  private readonly api: string = 'http://192.168.1.89:5000/wedding'
   constructor(private http: HttpClient) { }
 
   getSongPicks(): Observable<SongPick[]> {
     const getSongPicksUrl: string = this.api + '/getSongPicks';
-    return this.http.get<SongPick[]>(getSongPicksUrl).pipe(
+    return this.http.get<SongPick[]>(getSongPicksUrl, {headers: {property: "Access-Control-Allow-Origin"}}).pipe(
       tap(() => { console.log('get song picks returned succefully') }
         , catchError(this.handleError('Error getting song pick List'))
       ));

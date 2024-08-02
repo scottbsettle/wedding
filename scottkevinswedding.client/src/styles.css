@@ -6,7 +6,7 @@
     --hover-color: #00121f;
     --font-color-primary: #C4C4C4;
     --warning-color: rgb(173, 7, 7);
-    --font-family: cursive
+    --font-family: sans-serif;
 }
 
 body {
@@ -223,7 +223,6 @@ img{
 @media only screen and (max-width: 960px) {
     .info {
         width: 100%;
-        
     }
 
     .half-container {
@@ -300,8 +299,9 @@ img{
 .global-search{
     display: flex;
 }
+
 @media only screen and (max-width: 960px) {
     html{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
